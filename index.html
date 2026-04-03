@@ -101,7 +101,7 @@
   }
 
   .wheel-wrapper {
-    position: relative; width: 300px; height: 300px;
+    position: relative; width: 360px; height: 360px;
     margin-bottom: 10px;
   }
 
@@ -397,7 +397,7 @@
     <div class="wheel-area">
       <div class="wheel-wrapper">
         <div class="wheel-pointer"></div>
-        <canvas id="wheelCanvas" width="300" height="300"></canvas>
+        <canvas id="wheelCanvas" width="360" height="360"></canvas>
         <div class="wheel-hub">🎯</div>
       </div>
     </div>
@@ -535,7 +535,7 @@ function stopTicks()  { clearInterval(tickInterval); tickInterval = null; }
 function drawWheel(angle) {
   const canvas = document.getElementById('wheelCanvas');
   const ctx = canvas.getContext('2d');
-  const cx = 150, cy = 150, r = 146;
+  const cx = 180, cy = 180, r = 175;
   const n = items.length;
   ctx.clearRect(0,0,300,300);
 
